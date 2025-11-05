@@ -1,3 +1,8 @@
+.nav-container {
+    text-align: center;
+    margin: 1rem 0;
+}
+
 nav {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
@@ -6,7 +11,6 @@ nav {
     border-radius: 15px;
     border: 2px solid whitesmoke;
     display: inline-block;
-    margin: 1rem auto;
     text-align: center;
 }
 
