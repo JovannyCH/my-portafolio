@@ -1,4 +1,2 @@
-# Ignore all files in VS Code folder, except selected ones
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
+# Ignore VS Code folder completely
+.vscode/
