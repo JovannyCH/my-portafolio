@@ -41,6 +41,22 @@ body {
     color: white;
 }
 
+.icon-btn {
+    background: black;
+
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 8px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    transition: transform .12s ease, background .12s ease;
+}
+/* Move the whole button slightly on hover */ 
+.icon-btn:hover {
+    transform: translateY(-3px);
+}
+
 h2 {
     font-size: 24px;
     font-family: 'IBM Plex Mono', monospace;
