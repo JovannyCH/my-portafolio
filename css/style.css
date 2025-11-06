@@ -39,8 +39,12 @@ nav a:hover {
 body {
     background-color: black;
     color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
+/* Button style for icons */
 .icon-btn {
     background: black;
 
@@ -57,18 +61,90 @@ body {
     transform: translateY(-3px);
 }
 
+h1 {
+    font-size: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
 h2 {
     font-size: 24px;
     font-family: 'IBM Plex Mono', monospace;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 800;
     text-align: center;
+    color: rgb(189, 229, 255);
 }
 
-p, ul {
-    font-size: 16px;
+p {
+    font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: justify;
+    text-align: center;
+    max-width: 700px;
+    margin: 1rem auto;
+    line-height: 1.6;
+}
+
+section ul {
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-position: inside;
+    text-align: center;
+    max-width: 700px;
+    margin: 1rem auto;
+    padding: 0;
+}
+
+section li {
+    margin: 0.5rem 0;
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Icon Link Styles */
+.icon-link {
+    position: relative;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.icon-link:hover {
+    transform: translateY(-5px);
+    color: #a0a0a0;
+}
+
+/* Tooltip Styles */
+.icon-link .tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.icon-link:hover .tooltip {
+    opacity: 1;
 }
